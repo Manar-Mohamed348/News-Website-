@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ترتيب الليجا</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../CSS/Standings.css" />
+  </head>
+
+  <body>
+    <div class="conta">
+      <header>
+        <nav>
+          <ul>
+            <li id="index">
+              <a href="../index.html">الرئيسية </a>
+            </li>
+            <li id="Matches">
+              <a href="Matches.html">المباريات </a>
+            </li>
+            <li class="active" id="Standings">
+              <a href="Standings.html">الترتيب</a>
+            </li>
+            <li id="TopScorers">
+              <a href="TopScorers.html">الاحصائيات</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="main-card">
+        <h2>🏆 ترتيب الدوري الإسباني الممتاز</h2>
+
+        <div id="wait-msg" class="msg-info">
+          ثواني بنجيب الترتيب من السيرفر... ⚽
+        </div>
+
+        <table id="myTable" class="league-table" style="display: none">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="text-align: right">الفريق</th>
+              <th>لعب</th>
+              <th>فوز</th>
+              <th>تعادل</th>
+              <th>خسارة</th>
+              <th>له</th>
+              <th>عليه</th>
+              <th>الفرق</th>
+              <th>النقاط</th>
+            </tr>
+          </thead>
+          <tbody id="data-rows"></tbody>
+        </table>
+      </div>
+
+      <script src="../JS/Standings.js"></script>
+    </div>
+  </body>
+</html>

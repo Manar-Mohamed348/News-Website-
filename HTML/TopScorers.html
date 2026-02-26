@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/TopScorers.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li class="active" id="TopScorers">
+              <a href="TopScorers.html">الاحصائيات</a>
+            </li>
+            <li id="Standings">
+              <a href="Standings.html">الترتيب</a>
+            </li>
+            <li id="Matches">
+              <a href="Matches.html">المباريات </a>
+            </li>
+            <li id="index">
+              <a href="../index.html">الرئيسية </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <div class="box">
+          <h2>ترتيب الهدافين</h2>
+          <div class="table-wrapper top-scorers">
+            <table id="topScores">
+              <thead>
+                <tr>
+                  <th>ضربات جزاء</th>
+                  <th>صناعه</th>
+                  <th>الأهداف</th>
+                  <th>الفريق</th>
+                  <th>اللاعب</th>
+                  <th>#</th>
+                </tr>
+              </thead>
+
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="side-box">
+          <div class="box">
+            <h2>اقوي هجوم</h2>
+            <div class="table-wrapper">
+              <table id="best-attack">
+                <thead>
+                  <tr>
+                    <th>اهداف مسجله</th>
+                    <th>الفريق</th>
+                    <th>#</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="box">
+            <h2>اقوي دفاع</h2>
+            <div class="table-wrapper">
+              <table id="best-defense">
+                <thead>
+                  <tr>
+                    <th>اهداف مستقبله</th>
+                    <th>الفريق</th>
+                    <th>#</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/TopScorers.js"></script>
+  </body>
+</html>

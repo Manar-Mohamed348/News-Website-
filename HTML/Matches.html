@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Data AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/Matches.css" />
+  </head>
+
+  <body>
+    <div class="conta">
+      <header>
+        <nav>
+          <ul>
+            <li id="TopScorers">
+              <a href="TopScorers.html">الاحصائيات</a>
+            </li>
+            <li id="Standings">
+              <a href="Standings.html">الترتيب</a>
+            </li>
+            <li class="active" id="Matches">
+              <a href="Matches.html">المباريات </a>
+            </li>
+            <li id="index">
+              <a href="../index.html">الرئيسية </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>الدوري الاسباني</h1>
+
+        <div class="main-matches">
+          <section class="content" id="matches-display">
+            Loading matches...
+          </section>
+
+          <aside
+            class="sidebar"
+            onclick="window.location.href = '../HTML/Standings.html'"
+          >
+            <h3>اول 10 فرق</h3>
+            <section id="standings-display">Loading table...</section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <script src="../JS/Matches.js"></script>
+  </body>
+</html>

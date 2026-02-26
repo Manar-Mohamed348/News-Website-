@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 247, 251);
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.container header nav {
+  background-color: #2e445e;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container header nav ul {
+  display: flex;
+  gap: 80px;
+}
+
+.container header nav ul li {
+  list-style: none;
+}
+
+.container header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.active {
+  border-bottom: 3px solid #f0f0f0;
+}
+/* main content  */
+main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(185, 183, 183);
+}
+main .box {
+  background: linear-gradient(135deg, #4a627a, #2e445e);
+  padding: 20px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  text-align: right;
+}
+.side-box div:first-child {
+  margin-bottom: 10px;
+}
+h2 {
+  color: white;
+  margin: 10px auto;
+  font-size: 30px;
+}
+table {
+  text-align: right;
+  width: 100%;
+  border-collapse: collapse;
+}
+main .box .top-scorers {
+  max-height: 541px;
+}
+
+table thead th {
+  font-size: 20px;
+  top: 0;
+  color: white;
+  z-index: 2;
+}
+tr:not(:last-child) {
+  border-bottom: 1px solid #2a2a2a;
+}
+th,
+td {
+  padding: 5px;
+}

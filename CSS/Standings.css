@@ -1,0 +1,109 @@
+.conta header nav {
+  background-color: #2e445e;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conta header nav ul {
+  display: flex;
+  gap: 80px;
+}
+
+.conta header nav ul li {
+  list-style: none;
+}
+
+.conta header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.active {
+  border-bottom: 3px solid #f0f0f0;
+}
+
+.conta header nav ul li a:hover {
+  color: rgb(180, 197, 202);
+}
+
+/* الباك جراوند باللون اللي قولنا عليه */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(243, 247, 251);
+  margin: 0;
+  padding: 0;
+  /* وسعت المساحة شوية عشان الدنيا متلزقش ف بعض*/
+}
+
+.main-card {
+  max-width: 950px;
+  margin: 35px auto;
+  background: linear-gradient(135deg, #4a627a, #2e445e);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* هنا جدول الترتيب */
+.league-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.league-table th {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.league-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #f7f7f7;
+  font-size: 14px;
+  color: rgb(185, 183, 183);
+}
+
+.team-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: right;
+  /* عشان الاسامي تبان مظبوطة */
+}
+
+.logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* تلوين عمود النقاط عشان يبان */
+.pts-style {
+  font-weight: 700;
+  color: #1e40af;
+  background: #9b9b9b;
+  border-radius: 4px;
+}
+
+.msg-info {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
